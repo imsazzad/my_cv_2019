@@ -1,0 +1,210 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Md Abdul Hasib 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Md Abdul Hasib} % Your name
+\address{62/4/A South Mugda, Dhaka, Bangladesh} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{+880-1917187787 \\ abdulhasibsazzad@gmail.com} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Bangladesh University of Engineering and Technology, Dhaka} \hfill {\em 2009 - 2014} 
+\\ B.Sc. in Computer Science and Engineering.\hfill { CGPA: 3.48 }
+\\
+\\{\bf Birshreshtha Munshi Abdur Rouf Public College, Dhaka} \hfill {\em 2006 - 2008} 
+\\ Higher Secondary School Certificate.\hfill { GPA: 5.00 }
+\\
+\\{\bf Motijheel Government Boys'​ High School, Dhaka} \hfill {\em 1996 - 2006} 
+\\ Secondary School Certificate.\hfill { GPA: 5.00 }
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+\begin{rSection}{Carrier Objective}
+ To work for an organization which provides me the opportunity to improve my skills and knowledge to grow along with the organization objective.
+\end{rSection}
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Projects}
+{\bf Project DEEP VISION ( Object Recognition \& Localization )}
+\\The project has two parts.One part was to find out the machine learning solution for object recognition \& the second part is building the software part on top of it. I have worked on both part. In this RnD I had to find out using what minimum images for training we can have a good precision \& recall in both object recognition and localization. we use 20\% data for training and 80\% for testing. still, we got a decent accuracy of 90\%. I used both traditional machine learning and Deep learning for this work.t Then We have to build a multi-tenant software on top of it so that multiple clients can use it. Here we used YOLO algorithm to identify and localize objects. AND for software, we use AWS serverless architecture, javascript, SQL etc to implement the solution.\\
+\\{\bf Project Surveillance, Epidemiology, End Results Program (“SEER”)}\\
+Project SEER attempts to detect the type (Benign, Uncertain, Carcinoma in Situ, Malignant )of breast cancer based on the SEER dataset from the National Institutes of Health (NIH). To classify the patients, we explored several traditional machine learning and deep learning techniques such as Support vector machine, Decision tree, Logistic regression, Naive Bayes, Feedforward, and Recurrent neural networks. We filled in some gaps in the data by preprocessing using imputation and other techniques. We identified 15 key features (out of 138 attributes) from the dataset, such as “CS Lymph Nodes”, “CS tumor age”, “Age at diagnosis”, “Tumor marker” etc. Our final dataset consisted of ~1.6 million breast cancer records. After training our data model, we achieved ~98\% accuracy using a deep learning architecture. Then we tuned the parameters and were able to increase the accuracy to 99.25\%. In summary, some of our algorithm’s predictions were accurate 99.25\% of the time in detecting which of the 4 classes or types of breast cancer were present in the data.
+
+Technologies \& Methodology : 
+python, Tensor-flow, deep learning and traditional machine learning.\\
+
+
+{\bf Project N2C2 ( Identifying Patients for Clinical Trials Using NLP Information Extraction Augmented by Medical Ontologies )
+}\\
+First I want to share that For this work we were invited to present our work on a workshop is co-located with AMIA in San Francisco, California. 
+
+Patient cohort identification for the clinical trial is a fairly tedious and expensive component of the drug
+development. Existing selection processes do not necessarily guarantee optimal selection. However, the
+existence of EHRs and the application of
+(NLP) techniques such as IE can enable automated, scalable, and
+unbiased selection of patients who meet the selection criteria for clinical trials.
+We built a knowledge-driven EHR medical Information Extraction framework by extending the
+cTAKES natural language processing tool developed at the Mayo Clinic. cTakes is built on top of
+the UIMA.
+
+To support the needs of the selection criteria, we
+
+● Incorporated medical ontology into the annotation framework to enhance the
+recognition and extraction of medical terms - conditions, procedures, encounters etc.
+Ontologies used include the National Library of Medicine's MeSH
+ontology, UMLS ontology, Systematized
+Nomenclature of Medicine -- Clinical Terms (SNOMED CT).
+● Created custom annotators to annotate the
+○ value of a glycated hemoglobin test
+○ identification of a myocardial infarction event
+○ use of aspirin by a patient to prevent myocardial infarction
+○ diagnosis of ketoacidosis in the past year
+○ history of intra-abdominal surgery, small or large intestine resection or small
+bowel obstruction
+○ existence of DM
+○ the language spoken by the patient
+● Created heuristics that applied combined medical knowledge into rules and are applied
+to the annotated text to determine whether a selection criterion has been met.
+● Extended Wendy Chapman's NegEx algorithm determining negation from clinical reports
+to determine negation on multiple negation phrases on one sentence.
+Initial results on test data gave us a macro precision of 87.16\% and a macro recall of 82.79\%
+were very promising. 
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Machine Learning \ & Traditional ML, Deep Learning \\
+Language & Java, Python, C++, C, SQL, Javascript \\
+Software \& Tools & Agile,AWS, Latex \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+\begin{rSubsection}{Infolytx Inc, Dhaka}{April 2019 - Now}{Staff Software Engineer / Machine Learning Engineer }{}
+\item 
+- Working on different Deep Learning based and NLP solution. 
+-  Leading AI Team and AI projects to articulate and disseminate AI knowledge as well as domain knowledge to the team members.
+- Structured unstructured clinical content such as EHRs by extracting and inferring medical terms such as findings, tests, procedures, diseases, etc using NLP techniques
+- Implemented Object Detection Algorithm to classify and localize an object in an image with 98\% accuracy.
+\end{rSubsection}
+
+\begin{rSubsection}{Infolytx Inc, Dhaka}{November 2016 - March 2019}{Senior Software Engineer}{}
+\item 
+In addition to the responsibility as a software engineer descrived in the previous role:
+
+- Implemented the cohort identification system for the clinical trial in the N2C2 challenge, a competition of Harvard Medical School.  Got a position in TOP 5 in competition and were invited to the present the work with AMIA in San Francisco, California.
+- Worked on different Deep Learning based and NLP solution. 
+- Detected the type of breast cancer based on the SEER dataset using traditional machine learning and deep learning techniques.
+- Implemented  the application to predict the ambulatory status of residents using Deep Learning Techniques(LSTM, Rule-Based) 
+- analyzing electronic medical records
+- natural language processing in the clinical context (Java)
+- building web services / APIs (Java, Python)
+- building front-end applications with ReactJS
+
+\end{rSubsection}
+
+\begin{rSubsection}{Infolytx Inc, Dhaka}{September 2015 - October 2016}{Software Engineer}{}
+\item 
+Past project work involved: 
+- worked on different machine learning-based solution. 
+- Algorithm used:  Apriori algorithm, KNN, SVM, and different rule-based techniques 
+- worked with UMLS dictionaries and HL7 standards
+- analyzing electronic medical records
+- analyzing large clinical data sets in MongoDB
+- natural language processing in the clinical context (Java)
+- building web services / APIs (Java)
+- building front-end prototypes with  Ruby on Rails and react
+- working on various Java applications - core project work, utilities, etc.
+-completed CSM and worked as a ScrumMaster and Team Lead on some projects.
+\end{rSubsection}
+
+\begin{rSubsection}{Nascenia Limited, Dhaka}{August 2014 - August 2016}{Junior Software Engineer}{}
+\item 
+Worked as a team player to develop a web application with on Ruby on rails
+Developed some projects solely from initial requirement gathering to design, coding, testing,
+Did documentation \& implementation and client handling.
+Worked with the application server, web server, and Jenkins server.
+Handled and provided API services. 
+Took Technical Session on Git, Clean Code, Active Record Query 
+\end{rSubsection}
+
+\end{rSection}
+
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Academic Achievements} 
+\item Received government scholership both in S.S.C  and H.S.C
+\end{rSection}
+
+%\newpage
+
+%----------------------------------------------------------------------------------------
+% Extra Curricular
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Extra-Cirrucular} \itemsep -3pt
+\item Attended a workshop to present project N2C2 \& DEEP VISION at ACI Limited, Dhaka in 2019.
+\item Finalist of Inter Departmental Cricket Competition 2014.
+\item Was a member of the Bishwo Shahitto Kendro from 2004 to 2006.
+\item Was a member of Bangladesh Scouts from 2006-2007.
+\item  Participated in Intra Software Cricket tournament in 2017 organized by all software companies, Dhaka.
+\item Won a cell phone in a coaching center after solving a hard math problem in 2005.
+
+
+\end{rSection}
+
+\begin{rSection}{Personal Traits}
+\item Highly motivated and eager to learn new things.
+\item Strong motivational and leadership skills.
+\item Ability to work as an individual as well as in group.
+\end{rSection}
+
+\end{document}
+
